@@ -1,0 +1,17 @@
+{% extends "job_board/_base.html" %}
+{% load humanize %}
+
+{% block content %}
+    <div class="joblist">
+        {% for job in JobPostings %}
+            <div class="card">
+                <p class="title">{{ job.name | title }}</p>
+                <div class="detail">
+                    <p class="info">{{ job.company }}</p>
+                    <p class="info">${{ job.salary | intcomma }}</p>
+                    <a href='{% url "detail" job.pk %}' class="button">More Detail</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

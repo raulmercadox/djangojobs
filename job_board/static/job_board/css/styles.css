@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    width: 500px;
+    margin: 2em auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #D9D9D9;
+    height: 87px;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo {
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+.joblist {
+    width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.card {
+    flex-basis: 48%;
+    border: solid 1px #A3A3A3;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    /* padding: 1em; */
+}
+
+.title {
+    border-bottom: solid 1px #D9D9D9;
+    font-size: 1.25rem;
+    padding: 1em;
+}
+
+.info {
+    color: #767474;
+    margin-bottom: 1em;
+}
+
+.button {
+    display: block;
+    background-color: #187DDB;
+    color: #fff;
+    font-weight: 700;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border:none;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.button:link, .button:visited {
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #348ada;
+}
+
+.button:active {
+    background-color: #1161ac;
+}
+
+.detail {
+    padding: 1em;
+}

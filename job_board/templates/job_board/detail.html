@@ -1,0 +1,19 @@
+{% extends "job_board/_base.html" %}
+{% load humanize %}
+
+{% block content %}
+    <div class="container">
+        <div class="card">
+            <p class="title">Job Details</p>
+            <div class="detail">
+                <p class="info">Name: {{ job.name }}</p>
+                <p class="info">Description: {{ job.description }}</p>
+                <p class="info">Salary: ${{ job.salary | intcomma }}</p>
+                <p class="info">Company: {{ job.company }}</p>
+                <p class="info">Active: {{ job.is_active }} </p>
+                <a href='{% url "home" %}' class="button">Go Back</a>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}
