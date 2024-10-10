@@ -8,5 +8,8 @@ class JobPosting(models.Model):
     salary = models.IntegerField()
     is_active = models.BooleanField(default=False)
 
+    def __str__(self):
+        return f"{self.name} | {self.company} | Active: {self.is_active}"
+
 # python manage.py makemigrations
 # python manage.py migrate

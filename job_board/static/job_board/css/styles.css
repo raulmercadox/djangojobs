@@ -23,6 +23,8 @@ body {
     height: 87px;
     align-items: center;
     padding-left: 1em;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .title {
@@ -93,4 +95,19 @@ body {
 
 .detail {
     padding: 1em;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.menu-option {
+    padding-left: 1em;
+}
+
+.menu-option:last-child {
+    padding-right: 1em;
 }
